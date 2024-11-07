@@ -1,0 +1,73 @@
+/*Juego */
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5px;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    pointer-events: all;
+}
+
+.tower {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    height: 100%;
+    background-image: url('../Img/hanoi-base.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1; /* Asegura que las torres estén por debajo de los discos */
+}
+
+.tower.hover {
+    background-color: #d0d0d0; /* Color para indicar que es un destino válido */
+    border-color: #2ecc71; /* Cambio de borde para mayor énfasis */
+}
+
+.disk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    border-radius: 10px;
+    margin: 2px 0;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    text-shadow: 1px 1px 2px black ;
+    position: relative;
+    z-index: 2;
+}
+
+.disk:last-child:hover{
+    animation: marginUp 0.2s forwards;
+}
+
+@keyframes marginUp {
+    from {margin: 2px 0;
+    }
+    to{margin: 8px 8px;}
+}
+
+.html { background-color: #ff69b4; width: 220px; height: 30px; }
+.javascript { background-color: #f7dc6f; width: 200px;  height: 30px;}
+.python { background-color: #3572a5; width: 180px;  height: 30px;}
+.flask { background-color: #44a0e6; width: 160px;  height: 30px;}
+.mysql { background-color: #00698f; width: 140px; height: 30px; }
+.unity { background-color: #8bc34a; width: 120px;  height: 30px;}
+.blender { background-color: #ee7321; width: 100px; height: 30px; }
+.css { background-color: #0011ff; width: 80px; height: 30px; }
+.csharp { background-color: #9b59b6; width: 60px; height: 30px; }

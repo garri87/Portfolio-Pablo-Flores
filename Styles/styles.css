@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+   
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    /* gris oscuro */
+    background-color: #282d4b;
+    /* blanco */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    /* azul claro */
+}
+
+a:hover {
+    color: #2ecc71;
+    /* verde claro */
+}
+
+/* Estilos para la sección de información personal */
+
+header {
+    background-color: #295F98;
+    /* azul claro */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    /* blanco */
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Estilos para las secciones */
+
+section {
+    background-color: #fff;
+    /* blanco */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    background-color: #cfcfcf;
+    border-radius: 5px;
+    padding: 1%;
+    font-weight: bold;
+    box-shadow: 1px 2px 5px black ;
+    margin-bottom: 30px;
+}
+
+/* Estilos para la sección de habilidades */
+
+/*#skills ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+}
+
+#skills li img{
+    border: 1px solid gray;
+    width: auto;
+    height: 200px;
+    max-width: 300px;
+    padding: 5%;
+    border-radius: 5px;
+    object-fit: contain;
+    box-shadow: 1px 1px 5px 1px black;
+}*/
+
+
+
+/* Estilos para la sección de proyectos */
+
+#projects{
+    color: black;
+}
+
+#projects ul {
+    display: flex;
+
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    gap: 2%;
+}
+
+#projects li {
+    background-color: CDC2A5;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px 1px  black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#projects a {
+    color: #3498db;
+    /* azul claro */
+}
+
+#projects a:hover {
+    color: #2ecc71;
+    /* verde claro */
+}
+
+#projects img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.profile-header {
+    border-radius: 10px;
+    width: 100%;
+    max-height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid gray;
+    overflow: hidden;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgb(112, 96, 255);
+    box-shadow: 10px 1px 60px 1px black;
+}
+
+
+footer {
+    background-color: #252525;
+    /* azul claro */
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    /* blanco */
+    clear: both;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+
+

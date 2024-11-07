@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Ezequiel Flores - Dev resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/game.css">
+
+</head>
+
+<body>
+    <header class="profile-header">
+        <div>
+            <h1>Pablo Ezequiel Flores</h1>
+            <h2>Developer Resume</h2>
+        </div>
+        <div>
+            <img src="Img/pablo.jpg" alt="Foto de perfil" class="profile-picture">
+
+        </div>
+    </header>
+    <main class="container-fluid">
+        <section id="about">
+            <h2>About me</h2>
+            <p class="container-fluid">Im a passionate web and game programmer, the world of computing is my lifestyle since childhood and love
+                to learn new tools and technologies every day </p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul class="container-fluid">
+                <li>
+                    <h3>Courses & Certifications</h3>
+                    <ul>
+                        <li><b>2001:</b>
+                            <p>Completed a PC repair course at the Charles Charrier Institute with a PC repair title.
+                            </p>
+                        </li>
+                        <li>
+                            <b>2005:</b>
+                            <p>Completed 2 Years at the School of Musical Education (Emu), in the career of Sound and
+                                Recording Engineer.</p>
+                        </li>
+                        <li>
+                            <b>2010:</b>
+                            <p>Completed 1 year at the Buenos Aires School of Photographic Art in the experimental
+                                photography career.</p>
+                        </li>
+                        <li><b>2021:</b>
+                            <p>Fundamentals of Programming taught by Professor Alejandro Miguel Taboada Sanchez through
+                                the Udemy platform.
+                            </p>
+                        </li>
+                        <li><b>2021:</b>
+                            <p>Complete Unity 2020 course taught by Professor Juan Gabriel Gomila Salas of FROGAMES S.L.
+                                from Spain.</p>
+                        </li>
+                        <li>
+                            <b>2021:</b>
+                            <p>Diploma in Full Stack programming (HTML, CSS, Javascript, PHP, SQL, JQuery and Bootstrap)
+                                at Sicos Informática.</p>
+                        </li>
+                        <li>
+                            <b>2021:</b>
+                            <p>Introductory course to Data Science taught by the company Le Wagon.</p>
+                        </li>
+                        <li><b>2022:</b>
+                            <p>Full-stack python web developer course in the “Codo-a-Codo” program dictated by the
+                                Government of the City of Buenos Aires (HTML, CSS, JavaScript, Vue, MySQL, Python,
+                                Flask).</p>
+                        </li>
+                        <li><b>2023:</b>
+                            <p>Excel: Advanced functions, given at the National Institute of Public Administration
+                                (INAP).</p>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h2>Job Experience</h2>
+            <ul class="container-fluid">
+                <li>
+                    <ul>
+                        <p>Year 2007 to 2013</p>
+                        <li>
+                            <p>Official photographer and customer service in the photo office of the La Plata racetrack.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Advertising and press photography service contracted by the Palermo racetrack. </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Year 2008</p>
+                    <ul>
+                        <li>
+                            <p>Graphic designer of the Turf and Lottery section “El Dato”, of the Diagonales newspaper
+                                of the city of La Plata.</p>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <p>Year 2013 to the present:</p>
+                    <ul>
+                        <li>
+                            <p>Operational Unit of Contracts in the Sub-management of Purchases and Contracts of the
+                                National Commission for Space Activities (CONAE)</p>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <p>Year 2023 to the present:</p>
+                    <ul>
+                        <li>
+                            <p>Python Full-Stack Developer in the Technological Management Department of the National
+                                Commission for Space Activities (CONAE)</p>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skill stack</h2>
+
+            <div class="game-container" id="game-container">
+
+                <div class="tower" id="tower-a">
+                    <button class="disk html" data-tech="HTML" data-size="9">HTML</button>
+                    <button class="disk javascript" data-tech="JavaScript" data-size="8">JavaScript</button>
+                    <button class="disk python" data-tech="Python" data-size="7">Python</button>
+                    <button class="disk flask" data-tech="Flask" data-size="6">Flask</button>
+                    <button class="disk mysql" data-tech="MySQL" data-size="5">MySQL</button>
+                    <button class="disk unity" data-tech="Unity" data-size="4">Unity</button>
+                    <button class="disk blender" data-tech="Blender" data-size="3">Blender</button>
+                    <button class="disk css" data-tech="Css" data-size="2">CSS</button>
+                    <button class="disk csharp" data-tech="C#" data-size="1">C#</button>
+                </div>
+                <div class="tower" id="tower-b"></div>
+                <div class="tower" id="tower-c"></div>
+            </div>
+            <div style="display: flex; flex-direction: row; align-items: center;">
+                <p>
+                    <b>Movements: </b>
+                </p>
+                <p><b id="move-counter"></b></p>
+            </div>
+            <div>
+                <button class="btn btn-primary" id="reset-button" onclick="reset()">Reset</button>
+            </div>
+
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Zcavenger Official Page</h3>
+                    <p>Webpage of my personal game project "Zcavenger" </p>
+                    <img src="Img/zcavenger_page.png">
+                    <a href="www.zcavenger.com"><button class="btn btn-primary">Visit</button></a>
+                </li>
+                <li>
+                    <h3>Contracts and purchasing system </h3>
+                    <p>Purchase order tracking system and process management. Developed for the National Comission of
+                        Space Activities (CONAE) </p>
+                    <img src="Img/conae.png">
+
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; [2024] Pablo Ezequiel FLores - Contact: <a href="mailto:pfloresphoto@hotmail.com">Pfloresphoto@hotmail.com</a></p>
+        
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<script src="Scripts/scripts.js"></script>
+
+</html>
